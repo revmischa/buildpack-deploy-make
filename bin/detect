@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# bin/detect <build-dir>
+
+if (test -f $1/Makefile) then
+  echo "Makefile"
+  exit 0
+else
+  echo "no"
+  exit 1
+fi
